@@ -1,6 +1,6 @@
 # Pitbull.ai
 
-**An AI-native system that runs the commercial operation of a real-economy SME, end to end.**
+**The AI-native operating system for real-world businesses: a WhatsApp sales agent, CRM, quotes, scheduling, cash and P&L on one core. Live at a home-safety SME in Buenos Aires and Tucumán.**
 
 The code is private: it runs a real business with real customer data. This page explains what it does and how it is built.
 
