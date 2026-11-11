@@ -7,7 +7,7 @@ The code is private: it runs a real business with real customer data. This page 
 ## What it does
 
 - **WhatsApp sales copilot.** An LLM agent drafts every reply from the first message to the close: answers questions, reads photos of the space and voice notes, takes measurements, quotes, generates the PDF proposal and books the installation.
-- **Human in the loop, autonomy earned stage by stage.** An operator approves, edits or ignores each draft from an inbox. Autonomy is switched on per stage of the funnel, only where a scorecard shows the agent gets it right (a draft the operator rewrites counts as an error).
+- **Human in the loop, autonomy earned stage by stage.** An operator approves, edits or ignores each draft from an inbox. Autonomy is switched on per stage of the funnel, only where a scorecard shows the agent gets it right (a draft the operator rewrites counts as an error). The goal is a fully autonomous agent that sells and books installations on its own.
 - **Back office on the same core.** CRM, scheduling, pricing that the non-technical team edits without a deploy, cash and P&L, and a monthly growth tracker per city.
 - **Multi-tenant from day one.** Every record belongs to a city, and each city has its own killswitch.
 
