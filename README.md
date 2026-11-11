@@ -1,6 +1,6 @@
 # Pitbull.ai
 
-**The AI-native operating system for traditional SMEs: a WhatsApp sales agent, CRM, quotes, scheduling, cash and P&L on one core. Live at a home-safety company in Buenos Aires and Tucumán.**
+**The AI-native operating system for traditional SMEs: a WhatsApp sales agent, CRM, quotes, scheduling, cash and P&L on one core. Live at a balcony safety-net company in Buenos Aires and Tucumán.**
 
 The code is private: it runs a real business with real customer data. This page explains what it does and how it is built.
 
@@ -13,7 +13,7 @@ The code is private: it runs a real business with real customer data. This page 
 
 ## First deployment
 
-**Grupo Redes**, a home-safety SME (balcony safety nets) from Tucumán, Argentina. Pitbull.ai is its product and AI layer, and it is what let the business scale to Buenos Aires.
+**Grupo Redes**, a balcony safety-net SME from Tucumán, Argentina. Pitbull.ai is its product and AI layer, and it is what let the business scale to Buenos Aires.
 
 ## Architecture
 
