@@ -6,14 +6,14 @@ The code is private: it runs a real business with real customer data. This page 
 
 ## What it does
 
-- **WhatsApp sales copilot.** An LLM agent drafts every reply from the first message to the close: answers questions, reads photos of the space and voice notes, takes measurements, quotes, generates the PDF proposal and books the installation.
-- **Human in the loop, autonomy earned stage by stage.** An operator approves, edits or ignores each draft from an inbox. Autonomy is switched on per stage of the funnel, only where a scorecard shows the agent gets it right (a draft the operator rewrites counts as an error). The goal is a fully autonomous agent that sells and books installations on its own.
+- **WhatsApp sales agent.** An LLM-orchestrated agent handles every conversation from the first message to the close: answers questions, reads photos of the space and voice notes, takes measurements, quotes, generates the PDF proposal and books the installation.
+- **Operator inbox and autonomy per funnel stage.** The team can step into any conversation from one inbox. Autonomy is set per stage of the funnel and backed by a scorecard that measures how often the agent gets it right.
 - **Back office on the same core.** CRM, scheduling, pricing that the non-technical team edits without a deploy, cash and P&L, and a monthly growth tracker per city.
 - **Multi-tenant from day one.** Every record belongs to a city, and each city has its own killswitch.
 
 ## First deployment
 
-**Grupo Redes**, a balcony safety-net SME from Tucumán, Argentina. Pitbull.ai is its product and AI layer, and it is what let the business scale to Buenos Aires.
+**Grupo Redes**, a balcony safety-net SME from Tucumán, Argentina. I joined as a partner by bringing in Pitbull.ai as its product and AI layer, which is what let the business scale to Buenos Aires. Shipped and running in two Argentine markets: Tucumán and Buenos Aires.
 
 ## Architecture
 
@@ -22,7 +22,7 @@ flowchart LR
     A[WhatsApp Cloud API] --> B[Ingestion<br/>normalizes the channel,<br/>resolves the tenant,<br/>transcribes audio]
     B --> C[LLM orchestration<br/>versioned prompts,<br/>tools: pricing, PDF quote,<br/>calendar, escalation]
     C --> D[(Transactional core<br/>PostgreSQL)]
-    C --> E[Operator inbox<br/>approve · edit · ignore]
+    C --> E[Operator inbox<br/>step in any time]
     E --> A
     D --> F[Dashboard<br/>CRM · pricing · cash · P&L · growth]
 ```
@@ -33,7 +33,7 @@ flowchart LR
 
 ## Principles
 
-- Copilot before autonomous.
+- Autonomy set per funnel stage, measured by a scorecard.
 - A killswitch that turns the system off in seconds.
 - Log everything, including what each model call costs.
 - Tests for every piece of business logic: quoting, routing, agent decisions.
